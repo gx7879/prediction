@@ -17,3 +17,10 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+const toggleOpen = document.querySelector(".toggle-open");
+const swiperToggle = document.querySelector(".swiper-toggle");
+toggleOpen.addEventListener("click", function () {
+  swiperToggle.classList.toggle("h-0");
+  swiperToggle.classList.toggle("!p-0");
+});

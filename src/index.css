@@ -18,14 +18,24 @@ a {
 }
 .swiper-button-next:after {
   content: "" !important;
-  background-image: url("./src/assets/next-btn.png");
+  background-image: url("../src/assets/next-btn.png");
   background-size: cover;
   width: 40px;
   height: 40px;
 }
+.swiper-button-next:hover:after {
+  background-image: url("../src/assets/next-btn-hover.png");
+}
 .swiper-button-prev:after {
   content: "" !important;
-  background-image: url("./src/assets/prev-btn.png");
+  background-image: url("../src/assets/prev-btn.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+.swiper-button-prev:hover:after {
+  content: "" !important;
+  background-image: url("../src/assets/prev-btn-hover.png");
   background-size: cover;
   width: 40px;
   height: 40px;

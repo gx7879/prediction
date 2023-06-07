@@ -7,667 +7,687 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app" class="bg-[url(./src/assets/bg.png)] bg-cover">
-      <!-- <div class="fixed top-0 left-0 right-0 bottom-0 bg-black/80">
-        <div
-          class="absolute top-[60px] left-1/2 w-[calc(100%_-_40px)] max-w-[480px] -translate-x-1/2 rounded-[30px] bg-[rgba(5,_41,_74,_0.7)] py-[60px] md:w-full md:rounded-[60px]"
-        >
-          <div class="pr-[18px]">
-            <img
-              class="mb-[25px] w-full"
-              src="./src/assets/login-logo.png"
-              alt=""
-            />
+    <div
+      id="app"
+      class="desktop:flex desktop:h-screen desktop:flex-col bg-[url(../src/assets/bg.png)] bg-cover md:bg-black"
+    >
+      <div class="desktop:max-w-none md:mx-auto md:max-w-[1080px]">
+        <div class="flex items-center py-2 md:py-4">
+          <div class="mr-2 flex-1">
+            <img src="./src/assets/login-logo.png" alt="" />
           </div>
           <div
-            class="mb-[35px] border-b-2 border-[#064F9399] pb-[30px] pl-[30px] pr-[35px]"
-          >
-            <div class="mb-5 flex items-center md:mb-10">
-              <img
-                class="mr-[30px] h-10"
-                src="./src/assets/account-icon.png"
-                alt=""
-              />
-              <input
-                type="text"
-                class="h-12 flex-1 rounded-[60px] bg-[#05182080] pl-3 text-white outline-none placeholder:text-[#84E1CB]"
-                placeholder="Tên đăng nhập"
-              />
-            </div>
-            <div class="flex items-center">
-              <img
-                class="mr-[30px] h-10"
-                src="./src/assets/password-icon.png"
-                alt=""
-              />
-              <input
-                type="text"
-                class="h-12 flex-1 rounded-[60px] bg-[#05182080] pl-3 text-white outline-none placeholder:text-[#84E1CB]"
-                placeholder="Tên đăng nhập"
-              />
-            </div>
-          </div>
-          <div class="flex">
-            <div class="mr-[18px] flex-1 space-y-5">
-              <div
-                class="rounded-e-[60px] flex items-center bg-[#175EA040] py-[5px] pl-6 text-xs text-white md:text-xl"
-              >
-                <img
-                  class="mr-4 w-5 md:mr-[30px] md:w-12"
-                  src="./src/assets/contact-icon.png"
-                  alt=""
-                />
-                Hãy liên hệ chúng tôi
-              </div>
-              <div
-                class="rounded-e-[60px] flex items-center bg-[#175EA040] py-[5px] pl-6 text-xs text-white md:text-xl"
-              >
-                <img
-                  class="mr-4 w-5 md:mr-[30px] md:w-12"
-                  src="./src/assets/qa-icon.png"
-                  alt=""
-                />
-                Hãy liên hệ chúng tôi
-              </div>
-            </div>
-            <button
-              type="button"
-              class="rounded-s-[60px] flex items-center bg-[#2E9BA94D] px-4 text-[#17D4C8] hover:text-white"
-            >
-              Đăng nhập
-            </button>
-          </div>
-        </div>
-      </div> -->
-      <div class="flex items-center py-2">
-        <div class="mr-2 flex-1">
-          <img src="./src/assets/login-logo.png" alt="" />
-        </div>
-        <button
-          type="button"
-          class="rounded-full bg-[#2E9BA9]/30 px-3 py-2 text-xs text-[#17D4C8]"
-        >
-          Đăng xuất
-        </button>
-      </div>
-      <div class="mb-2 px-2">
-        <div class="rounded-3xl border-2 border-[#064F93]/60 backdrop-blur-md">
+            class="desktop:block mr-4 hidden h-10 w-10 cursor-pointer bg-[url(../src/assets/reload.png)] bg-cover hover:bg-[url(../src/assets/reload-hover.png)]"
+          ></div>
           <div
-            class="flex items-center justify-between border-b-2 border-[#064F93]/60 py-2 px-4"
+            class="desktop:block mr-4 hidden h-10 w-10 cursor-pointer bg-[url(../src/assets/message.png)] bg-cover hover:bg-[url(../src/assets/message-hover.png)]"
+          ></div>
+          <div
+            class="desktop:block mr-4 hidden h-10 w-10 cursor-pointer bg-[url(../src/assets/menu.png)] bg-cover hover:bg-[url(../src/assets/menu-hover.png)]"
+          ></div>
+          <button
+            type="button"
+            class="desktop:text-xl desktop:hover:text-white rounded-full bg-[#2E9BA9]/30 px-3 py-2 text-xs text-[#17D4C8] md:py-3 md:px-4 md:text-3xl"
           >
-            <div class="relative">
-              <input
-                type="text"
-                class="h-[45px] w-[200px] rounded-full bg-[#051820]/50 px-2 placeholder:text-xs placeholder:text-[#84E1CB]"
-                placeholder="Vui lòng nhập số bàn"
-              />
-              <button
-                type="button"
-                class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-[#2E9BA9]/30 px-2 py-2 text-xs text-[#17D4C8]"
+            Đăng xuất
+          </button>
+        </div>
+        <div class="desktop:grid desktop:flex-1 desktop:grid-cols-[40%_60%]">
+          <div class="desktop:flex desktop:flex-col mb-2 px-2">
+            <div
+              class="desktop:mb-2 rounded-3xl border-2 border-[#064F93]/60 backdrop-blur-md"
+            >
+              <div
+                class="flex items-center justify-between border-b-2 border-[#064F93]/60 py-2 px-4"
               >
-                tìm kiếm
-              </button>
+                <div class="relative">
+                  <input
+                    type="text"
+                    class="h-[45px] w-[200px] rounded-full bg-[#051820]/50 px-2 text-white outline-none placeholder:text-xs placeholder:text-[#84E1CB] md:h-[55px] md:w-[300px] md:px-3 md:placeholder:text-base"
+                    placeholder="Vui lòng nhập số bàn"
+                  />
+                  <button
+                    type="button"
+                    class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-[#2E9BA9]/30 px-2 py-2 text-xs text-[#17D4C8] md:py-3"
+                  >
+                    tìm kiếm
+                  </button>
+                </div>
+                <img
+                  src="./src/assets/reload.png"
+                  class="desktop:hidden w-10"
+                  alt=""
+                />
+                <img
+                  src="./src/assets/message.png"
+                  class="desktop:hidden w-10"
+                  alt=""
+                />
+                <img
+                  src="./src/assets/menu.png"
+                  class="desktop:hidden w-10"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-toggle relative overflow-hidden border-b-2 border-[#064F93]/60 px-10 pt-2 pb-6"
+              >
+                <!-- Slider main container -->
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="grid grid-cols-4 gap-2 text-sm text-white">
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-white bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          001
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          002
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          003
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          004
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          005
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          006
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          007
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          008
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          009
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          010
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          011
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          012
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          013
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          014
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          015
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          016
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="grid grid-cols-4 gap-2 text-sm text-white">
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          017
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          018
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          019
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          020
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          021
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          022
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          023
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          024
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          025
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          026
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          027
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          028
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          029
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          030
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          031
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          032
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="grid grid-cols-4 gap-2 text-sm text-white">
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          033
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          034
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          035
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          036
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          037
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          038
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          039
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          040
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          041
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          042
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          043
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          044
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          045
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          046
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          047
+                        </div>
+                        <div
+                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
+                        >
+                          <img
+                            src="./src/assets/icon.png"
+                            class="mr-2 w-3"
+                            alt=""
+                          />
+                          048
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <div
+                class="toggle-open group flex cursor-pointer items-center justify-center py-2 md:py-4"
+              >
+                <!-- <img src="./src/assets/close.png" class="w-3 py-2" alt="" /> -->
+                <div
+                  class="w-4 bg-[url(../src/assets/close.png)] bg-cover pt-[1.666%] group-hover:bg-[url(../src/assets/close-hover.png)] md:w-[50px]"
+                ></div>
+              </div>
             </div>
-            <img src="./src/assets/reload.png" class="w-10" alt="" />
-            <img src="./src/assets/message.png" class="w-10" alt="" />
-            <img src="./src/assets/menu.png" class="w-10" alt="" />
+            <div
+              class="desktop:flex desktop:flex-1 desktop:flex-col hidden rounded-lg border-2 border-[#064F93]/60 bg-[#05294A] px-2"
+            >
+              <div
+                class="flex items-center justify-center gap-3 py-1 text-sm text-[#25A1E4]"
+              >
+                <img src="./src/assets/bot-icon.png" class="w-6" alt="" />
+                Dự đoán ván tiếp theo
+              </div>
+              <div
+                class="desktop:flex-1 h-48 w-full bg-[#051820] p-2 text-white"
+              >
+                tính toán dự báo...
+              </div>
+            </div>
           </div>
-          <div class="relative border-b-2 border-[#064F93]/60 px-10 pt-2 pb-6">
-            <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="grid grid-cols-4 gap-2 text-sm text-white">
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      001
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      002
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      003
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      004
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      005
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      006
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      007
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      008
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      009
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      010
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      011
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      012
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      013
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      014
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      015
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      016
-                    </div>
-                  </div>
+          <div class="desktop:flex desktop:flex-col px-2">
+            <div
+              class="mb-2 min-h-[100px] rounded-3xl border-2 border-[#064F93]/60"
+            >
+              <div
+                class="flex overflow-hidden border-b-2 border-[#064F93]/60 pb-1"
+              >
+                <div
+                  class="desktop:px-5 desktop:text-xl flex items-center bg-[url(../src/assets/icon-bg.png)] bg-contain bg-center bg-no-repeat px-2 text-white md:px-5 md:text-2xl"
+                >
+                  27
                 </div>
-                <div class="swiper-slide">
-                  <div class="grid grid-cols-4 gap-2 text-sm text-white">
+                <div
+                  class="rounded-es-xl desktop:px-5 desktop:text-xl flex-1 border-2 border-t-0 border-r-0 border-[#064F93]/60 bg-[#051820]/50 px-2 py-1 text-xs md:py-2 md:px-3 md:text-lg"
+                >
+                  <div class="origin-left scale-90 md:scale-100">
                     <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
+                      class="desktop:p-1 whitespace-nowrap rounded-full bg-[#295EAE]/20 text-[#E821C8]"
                     >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      017
+                      Ván thứ <span class="text-white">4</span> Nhà cái thắng 10
+                      ♦ 10 ♣ 10 ♥ : 10 ♠ 10 ♣ 10 ♥
                     </div>
                     <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
+                      class="desktop:p-1 whitespace-nowrap rounded-full text-[#32CCFC]"
                     >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      018
+                      Ván thứ <span class="text-white">4</span> Nhà con thắng 10
+                      ♦ 10 ♣ 10 ♥ : 10 ♠ 10 ♣ 10 ♥
                     </div>
                     <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
+                      class="desktop:p-1 whitespace-nowrap rounded-full bg-[#295EAE]/20 text-[#E821C8]"
                     >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      019
+                      Ván thứ <span class="text-white">4</span> Nhà cái thắng 10
+                      ♦ 10 ♣ 10 ♥ :1 0 ♠ 10 ♣ 10 ♥
                     </div>
                     <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
+                      class="desktop:p-1 whitespace-nowrap rounded-full text-[#32CCFC]"
                     >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      020
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      021
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      022
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      023
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      024
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      025
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      026
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      027
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      028
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      029
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      030
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      031
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      032
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="grid grid-cols-4 gap-2 text-sm text-white">
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      033
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      034
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      035
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      036
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      037
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      038
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      039
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      040
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      041
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      042
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      043
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      044
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      045
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      046
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      047
-                    </div>
-                    <div
-                      class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2"
-                    >
-                      <img
-                        src="./src/assets/icon.png"
-                        class="mr-2 w-3"
-                        alt=""
-                      />
-                      048
+                      Ván thứ <span class="text-white">4</span> Nhà con thắng 10
+                      ♦ 10 ♣ 10 ♥ : 10 ♠ 10 ♣ 10 ♥
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="flex items-center justify-between px-3 py-2">
+                <div class="text-center">
+                  <div class="text-xs text-[#7C4FFB] md:text-xl">
+                    Gợi ý đặt cược ván tiếp theo
+                  </div>
+                  <div class="text-sm text-[#32CCFC] md:text-base">Nhà cái</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-xs text-[#7C4FFB] md:text-xl">
+                    Xác suất đôi
+                  </div>
+                  <div class="text-sm text-white md:text-base">52%</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-xs text-[#7C4FFB] md:text-xl">
+                    Xác suất hoà
+                  </div>
+                  <div class="text-sm text-white md:text-base">20%</div>
+                </div>
+              </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="./src/assets/close.png" class="w-3 py-2" alt="" />
+            <div
+              class="desktop:flex-1 mb-2 rounded-lg border-2 border-[#064F93]/60 bg-[#05294A] px-2"
+            >
+              <div class="desktop:h-full h-48 w-full bg-white"></div>
+            </div>
+            <div
+              class="desktop:hidden rounded-lg border-2 border-[#064F93]/60 bg-[#05294A] px-2"
+            >
+              <div
+                class="flex items-center justify-center gap-3 py-1 text-sm text-[#25A1E4]"
+              >
+                <img src="./src/assets/bot-icon.png" class="w-6" alt="" />
+                Dự đoán ván tiếp theo
+              </div>
+              <div class="h-48 w-full bg-[#051820] p-2 text-white">
+                tính toán dự báo...
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="px-2">
-        <div class="rounded-3xl border-2 border-[#064F93]/60">
-          <div class="flex overflow-hidden border-b-2 border-[#064F93]/60 pb-1">
-            <div
-              class="flex items-center bg-[url(./src/assets/icon-bg.png)] bg-contain bg-center bg-no-repeat px-2 text-white"
-            >
-              27
-            </div>
-            <div
-              class="rounded-es-xl flex-1 border-2 border-t-0 border-r-0 border-[#064F93]/60 bg-[#051820]/50 p-1 text-xs"
-            >
-              <div class="rounded-full bg-[#295EAE]/20 text-[#E821C8]">
-                Ván thứ <span class="text-white">4</span> Nhà cái thắng 10 ♦ 10
-                ♣ 10 ♥:10 ♠ 10 ♣ 10 ♥
-              </div>
-              <div class="rounded-full text-[#32CCFC]">
-                Ván thứ <span class="text-white">4</span> Nhà con thắng 10 ♦ 10
-                ♣ 10 ♥:10 ♠ 10 ♣ 10 ♥
-              </div>
-              <div class="rounded-full bg-[#295EAE]/20 text-[#E821C8]">
-                Ván thứ <span class="text-white">4</span> Nhà cái thắng 10 ♦ 10
-                ♣ 10 ♥:10 ♠ 10 ♣ 10 ♥
-              </div>
-              <div class="rounded-full text-[#32CCFC]">
-                Ván thứ <span class="text-white">4</span> Nhà con thắng 10 ♦ 10
-                ♣ 10 ♥:10 ♠ 10 ♣ 10 ♥
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center justify-between px-3 py-2">
-            <div class="text-center">
-              <div class="text-xs text-[#7C4FFB]">
-                Gợi ý đặt cược ván tiếp theo
-              </div>
-              <div class="text-sm text-[#E821C8]">Nhà cái</div>
-            </div>
-            <div class="text-center">
-              <div class="text-xs text-[#7C4FFB]">Xác suất đôi</div>
-              <div class="text-sm text-white">52%</div>
-            </div>
-            <div class="text-center">
-              <div class="text-xs text-[#7C4FFB]">Xác suất hoà</div>
-              <div class="text-sm text-white">20%</div>
-            </div>
-          </div>
+        <div class="desktop:hidden py-4 text-center text-xs text-[#25A1E4]">
+          Phiên bản V7 20230525
         </div>
       </div>
     </div>
