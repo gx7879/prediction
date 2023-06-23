@@ -9,22 +9,15 @@
   <body>
     <div
       id="app"
-      class="desktop:flex desktop:h-screen desktop:flex-col bg-[url(../src/assets/bg.png)] bg-cover md:bg-black"
+      class="desktop:flex desktop:min-h-screen desktop:flex-col desktop:bg-[url(../src/assets/bg-desktop.png)] bg-[url(../src/assets/bg.png)] bg-contain md:bg-black"
     >
-      <div class="desktop:max-w-full md:mx-auto md:max-w-[1080px]">
+      <div
+        class="desktop:max-w-full desktop:w-auto desktop:min-w-[1080px] md:mx-auto md:w-full md:max-w-[1080px]"
+      >
         <div class="flex items-center py-2 md:py-4">
           <div class="mr-2 flex-1">
             <img src="./src/assets/login-logo.png" alt="" />
           </div>
-          <div
-            class="desktop:block mr-4 hidden h-10 w-10 cursor-pointer bg-[url(../src/assets/reload.png)] bg-cover hover:bg-[url(../src/assets/reload-hover.png)]"
-          ></div>
-          <div
-            class="desktop:block mr-4 hidden h-10 w-10 cursor-pointer bg-[url(../src/assets/message.png)] bg-cover hover:bg-[url(../src/assets/message-hover.png)]"
-          ></div>
-          <div
-            class="desktop:block mr-4 hidden h-10 w-10 cursor-pointer bg-[url(../src/assets/menu.png)] bg-cover hover:bg-[url(../src/assets/menu-hover.png)]"
-          ></div>
           <button
             type="button"
             class="desktop:text-xl desktop:hover:text-white rounded-full bg-[#2E9BA9]/30 px-3 py-2 text-xs text-[#17D4C8] md:py-3 md:px-4 md:text-3xl"
@@ -32,668 +25,271 @@
             Đăng xuất
           </button>
         </div>
-        <div class="desktop:grid desktop:flex-1 desktop:grid-cols-[40%_60%]">
-          <div class="desktop:flex desktop:flex-col mb-2 px-2">
+        <div class="desktop:px-0 px-1 pb-2">
+          <div
+            class="desktop:px-20 desktop:py-7 desktop:rounded-[45px] rounded-xl border border-[#064f93]/60 bg-[#05294A]/70 p-2 backdrop-blur-md"
+          >
             <div
-              class="desktop:mb-2 rounded-3xl border-2 border-[#064F93]/60 backdrop-blur-md"
+              class="desktop:border-none desktop:justify-start desktop:-mx-20 desktop:px-9 -mx-2 mb-2 flex items-center justify-center border-b border-[#064f93]/60 px-2 pt-1 pb-3"
             >
-              <div
-                class="flex items-center justify-between border-b-2 border-[#064F93]/60 py-2 px-4"
+              <img
+                class="desktop:w-8 desktop:mr-3 mr-2 w-4"
+                src="./src/assets/icon.png"
+                alt=""
+              />
+              <span class="desktop:font-bold desktop:text-2xl text-white"
+                >Vui lòng chọn phòng :</span
               >
-                <div class="relative">
-                  <input
-                    type="text"
-                    class="h-[45px] w-[200px] rounded-full bg-[#051820]/50 px-2 text-white outline-none placeholder:text-xs placeholder:text-[#84E1CB] md:h-[55px] md:w-[300px] md:px-3 md:placeholder:text-base"
-                    placeholder="Vui lòng nhập số bàn"
-                  />
-                  <button
-                    type="button"
-                    class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-[#2E9BA9]/30 px-2 py-2 text-xs text-[#17D4C8] md:py-3"
+            </div>
+            <div
+              class="desktop:grid-cols-3 grid grid-cols-2 gap-y-2 gap-x-2 md:gap-y-5 md:gap-x-[30px]"
+            >
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
                   >
-                    tìm kiếm
-                  </button>
-                </div>
-                <img
-                  src="./src/assets/reload.png"
-                  class="desktop:hidden w-10"
-                  alt=""
-                />
-                <img
-                  src="./src/assets/message.png"
-                  class="desktop:hidden w-10"
-                  alt=""
-                />
-                <img
-                  src="./src/assets/menu.png"
-                  class="desktop:hidden w-10"
-                  alt=""
-                />
-              </div>
-              <div
-                class="swiper-toggle relative overflow-hidden border-b-2 border-[#064F93]/60 px-10 pt-2 pb-6"
-              >
-                <!-- Slider main container -->
-                <div class="swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <div class="grid grid-cols-4 gap-2 text-sm text-white">
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-white bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          001
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          002
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          003
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          004
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          005
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          006
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          007
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          008
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          009
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          010
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          011
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          012
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          013
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          014
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          015
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          016
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="grid grid-cols-4 gap-2 text-sm text-white">
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          017
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          018
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          019
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          020
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          021
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          022
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          023
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          024
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          025
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          026
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          027
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          028
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          029
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          030
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          031
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          032
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="grid grid-cols-4 gap-2 text-sm text-white">
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          033
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          034
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          035
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          036
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          037
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          038
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          039
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          040
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          041
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          042
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          043
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          044
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          045
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          046
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          047
-                        </div>
-                        <div
-                          class="flex justify-center rounded-xl border-2 border-[#2E9BA9]/30 bg-[#2E9BA9]/30 p-2 hover:bg-[#32CCFC]"
-                        >
-                          <img
-                            src="./src/assets/icon.png"
-                            class="mr-2 w-3"
-                            alt=""
-                          />
-                          048
-                        </div>
-                      </div>
-                    </div>
+                    001
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
                   </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="h-20 bg-white md:h-36"></div>
               </div>
-              <div
-                class="toggle-open group flex cursor-pointer items-center justify-center py-2 md:py-4"
-              >
-                <!-- <img src="./src/assets/close.png" class="w-3 py-2" alt="" /> -->
+              <div class="border border-[#064F93]">
                 <div
-                  class="w-4 bg-[url(../src/assets/close.png)] bg-cover pt-[1.666%] group-hover:bg-[url(../src/assets/close-hover.png)] md:w-[50px]"
-                ></div>
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    002
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
               </div>
-            </div>
-            <div
-              class="desktop:flex desktop:flex-1 desktop:flex-col hidden rounded-lg border-2 border-[#064F93]/60 bg-[#05294A] px-2"
-            >
-              <div
-                class="flex items-center justify-center gap-3 py-1 text-sm text-[#25A1E4]"
-              >
-                <img src="./src/assets/bot-icon.png" class="w-6" alt="" />
-                Dự đoán ván tiếp theo
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    003
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
               </div>
-              <div
-                class="desktop:flex-1 h-48 w-full bg-[#051820] p-2 text-white"
-              >
-                tính toán dự báo...
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    004
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    005
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    006
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    007
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    008
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    009
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    010
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    011
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    012
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    013
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
+              </div>
+              <div class="border border-[#064F93]">
+                <div
+                  class="flex h-7 gap-x-3 border-b border-[#064F93] bg-[linear-gradient(180deg,_#102441_0%,_#000_98.13%)] md:h-[50px] md:gap-x-5"
+                >
+                  <div
+                    class="flex items-center pl-2 text-white md:pl-4 md:text-2xl"
+                  >
+                    014
+                  </div>
+                  <div
+                    class="rounded-ss-full flex flex-1 items-center justify-center border border-[#175EA0] text-xs text-[#17D4C8] md:text-base"
+                  >
+                    vào căn phòng
+                  </div>
+                </div>
+                <div class="h-20 bg-white md:h-36"></div>
               </div>
             </div>
           </div>
-          <div class="desktop:flex desktop:flex-col px-2">
-            <div class="mb-2 rounded-3xl border-2 border-[#064F93]/60">
-              <div
-                class="flex overflow-hidden border-b-2 border-[#064F93]/60 pb-1"
-              >
-                <div
-                  class="desktop:px-5 desktop:text-xl desktop:w-28 flex w-12 items-center justify-center bg-[url(../src/assets/icon-bg.png)] bg-contain bg-center bg-no-repeat px-2 text-white md:w-20 md:px-5 md:text-2xl"
-                >
-                  27
-                </div>
-                <div
-                  class="rounded-es-xl desktop:px-5 desktop:text-xl max-h-[200px] min-h-[100px] flex-1 overflow-auto border-2 border-t-0 border-r-0 border-[#064F93]/60 bg-[#051820]/50 px-2 py-1 text-xs md:py-2 md:px-3 md:text-lg"
-                >
-                  <div class="origin-left scale-90 md:scale-100">
-                    <div
-                      class="desktop:p-1 whitespace-nowrap rounded-full bg-[#295EAE]/20 text-[#E821C8]"
-                    >
-                      Ván thứ <span class="text-white">4</span> Nhà cái thắng 10
-                      ♦ 10 ♣ 10 ♥ : 10 ♠ 10 ♣ 10 ♥
-                    </div>
-                    <div
-                      class="desktop:p-1 whitespace-nowrap rounded-full text-[#32CCFC]"
-                    >
-                      Ván thứ <span class="text-white">4</span> Nhà con thắng 10
-                      ♦ 10 ♣ 10 ♥ : 10 ♠ 10 ♣ 10 ♥
-                    </div>
-                    <div
-                      class="desktop:p-1 whitespace-nowrap rounded-full bg-[#295EAE]/20 text-[#E821C8]"
-                    >
-                      Ván thứ <span class="text-white">4</span> Nhà cái thắng 10
-                      ♦ 10 ♣ 10 ♥ :1 0 ♠ 10 ♣ 10 ♥
-                    </div>
-                    <div
-                      class="desktop:p-1 whitespace-nowrap rounded-full text-[#32CCFC]"
-                    >
-                      Ván thứ <span class="text-white">4</span> Nhà con thắng 10
-                      ♦ 10 ♣ 10 ♥ : 10 ♠ 10 ♣ 10 ♥
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex min-h-[50px] items-center justify-between px-3 py-2"
-              >
-                <div class="text-center">
-                  <div class="text-xs text-[#7C4FFB] md:text-xl">
-                    Gợi ý đặt cược ván tiếp theo
-                  </div>
-                  <div class="text-sm text-[#32CCFC] md:text-base">Nhà cái</div>
-                </div>
-                <div class="text-center">
-                  <div class="text-xs text-[#7C4FFB] md:text-xl">
-                    Xác suất đôi
-                  </div>
-                  <div class="text-sm text-white md:text-base">52%</div>
-                </div>
-                <div class="text-center">
-                  <div class="text-xs text-[#7C4FFB] md:text-xl">
-                    Xác suất hoà
-                  </div>
-                  <div class="text-sm text-white md:text-base">20%</div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="desktop:flex-1 mb-2 rounded-lg border-2 border-[#064F93]/60 bg-[#05294A] px-2"
-            >
-              <div class="desktop:h-full h-48 w-full bg-white"></div>
-            </div>
-            <div
-              class="desktop:hidden rounded-lg border-2 border-[#064F93]/60 bg-[#05294A] px-2"
-            >
-              <div
-                class="flex items-center justify-center gap-3 py-1 text-sm text-[#25A1E4]"
-              >
-                <img src="./src/assets/bot-icon.png" class="w-6" alt="" />
-                Dự đoán ván tiếp theo
-              </div>
-              <div class="h-48 w-full bg-[#051820] p-2 text-white">
-                tính toán dự báo...
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="desktop:hidden py-4 text-center text-xs text-[#25A1E4]">
-          Phiên bản V7 20230525
         </div>
       </div>
+      <footer class="py-4 text-center text-[#25A1E4]">
+        Phiên bản V7 20230622
+      </footer>
     </div>
-    <!-- <script type="module">
-      
-    </script> -->
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
