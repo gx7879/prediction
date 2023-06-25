@@ -12,5 +12,7 @@
     "vitawind": "^2.2.4",
     "vite": "^2.4.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "swiper": "^9.4.1"
+  }
 }

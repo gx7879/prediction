@@ -5,7 +5,7 @@ module.exports = {
     "index.html",
     "login/index.html",
     "room/index.html",
-    "./src/**/*.{js,jsx,ts,tsx,vue,html}",
+    "./**/*.{js,jsx,ts,tsx,vue,html}",
   ],
   theme: {
     extend: {

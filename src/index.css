@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  height: 100%;
+}
 a {
   @apply text-blue-500 transition-all hover:text-blue-400 hover:underline;
 }
@@ -9,12 +13,18 @@ a {
 .swiper-button-prev {
   width: 40px !important;
   height: 40px !important;
+  transform: translateX(-50%);
+  margin: 0 !important;
 }
 .swiper-button-next {
-  right: 0 !important;
+  right: auto !important;
+  left: 50% !important;
+  top: auto !important;
+  bottom: 0.5rem;
 }
 .swiper-button-prev {
-  left: 0 !important;
+  left: 50% !important;
+  top: 0.5rem !important;
 }
 .swiper-button-next:after {
   content: "" !important;
@@ -49,4 +59,8 @@ a {
 }
 .swiper-pagination-bullet-active {
   @apply !bg-white;
+}
+
+.sidebar-open span {
+  @apply rotate-180;
 }
